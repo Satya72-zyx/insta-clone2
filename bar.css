@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: In;
+}
+
+/* instagram */
+.instagram {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+/* left_bar */
+.left_bar {
+    height: 100vh;
+    width: 20%;
+    /* background-color: rgb(220, 43, 226); */
+}
+
+#logo {
+
+    font-family: "Lobster", sans-serif;
+    font-size: 29px;
+}
+
+.left_bar .items {
+    display: flex;
+    align-items: center;
+    padding: 22px;
+    margin: 6px;
+}
+.left_bar .items .material-symbols-outlined{
+    margin-right: 12px;
+    font-size: 27px;
+}
+/* post_section */
+.post_section {
+    height: 100vh;
+    width: 55%;
+    background-color: rgb(39, 29, 47);
+}
+
+/* suggestion_bar */
+.suggestion_bar {
+    height: 100vh;
+    width: 25%;
+    /* background-color: rgb(244, 124, 12); */
+}
+
+
+.suggestion_bar .account_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+ .image{
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+ }
+ p{
+    color: rgb(158, 166, 173);
+ }
+ .switch{
+    color: rgb(8, 107, 237);
+ }
+ .suggestion2{
+    color: rgb(158, 166, 173);
+    font-weight: bolder;
+    font-size: 15px;
+ }
