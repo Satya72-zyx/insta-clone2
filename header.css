@@ -1,0 +1,159 @@
+ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #000000;
+        }
+
+        .header {
+            background-color: #000000;
+            border-bottom: 1px solid #262626;
+            padding: 8px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            height: 60px;
+        }
+
+        .logo {
+            font-family: 'Billabong', cursive;
+            font-size: 32px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .header-icons {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            transition: transform 0.1s ease;
+            color: #ffffff;
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
+        }
+
+        .icon:active {
+            transform: scale(0.95);
+        }
+
+        .stories-container {
+            margin-top: 60px;
+            padding: 16px;
+            background-color: #000000;
+            border-bottom: 1px solid #262626;
+        }
+
+        .stories-scroll {
+            display: flex;
+            gap: 16px;
+            overflow-x: auto;
+            padding: 8px 0;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .stories-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        .story-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 66px;
+            cursor: pointer;
+        }
+
+        .story-ring {
+            width: 66px;
+            height: 66px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            padding: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.1s ease;
+        }
+
+        .story-ring:hover {
+            transform: scale(1.05);
+        }
+
+        .story-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid white;
+            background-color: #e1e5e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #8e8e8e;
+        }
+
+        .story-username {
+            font-size: 12px;
+            color: #ffffff;
+            margin-top: 4px;
+            text-align: center;
+            max-width: 66px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .your-story {
+            position: relative;
+        }
+
+        .add-story {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 20px;
+            height: 20px;
+            background-color: #0095f6;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .notification-dot {
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            width: 8px;
+            height: 8px;
+            background-color: #ff3040;
+            border-radius: 50%;
+            border: 1px solid white;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Billabong&display=swap');
+     
